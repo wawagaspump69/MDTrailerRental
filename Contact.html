@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="main-content">
+    <nav class="sticky-navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Fleet.html">Our Fleet</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="How-it-works.html">The Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="testimonials.html">Hear Our Customers</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>MD Trailer Rentals</h1>
+        <p>Maryland's Go-To Trailer Service</p>
+    </header>
+
+    <section id="form-upload-section" style="padding: 30px 20px; text-align: center;">
+  <h2 style="color: red;">Download Our Form</h2>
+        <p>Download and fill out the form, then upload it here:</p>
+        <a href="Rental Form and Agreement.docx" download><button>Download Form</button></a>
+
+        <h2 style="color: red;">And</h2>
+
+       <h2 style="color: red;">Upload Your Completed Form Here</h2>
+        <div class="upload-container">
+            <h3>Upload Form:</h3>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="file" required>
+                <button type="submit">Start Renting</button>
+            </form>
+        </div>
+    </section>
+
+<section>
+    <div class="or-text">
+        <p>or</p>
+    </div>
+    </section>
+
+    <section id="contact">
+<h2 class="section-title" style="color: red;">Get in Touch</h2>
+        <p>If you have any questions or need assistance, feel free to reach out. We’re happy to help!</p>
+        <h3>Contact Information:</h3>
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+        <p><strong>Email:</strong> contact@mdtrailerrentals.com</p>
+
+        <h3>Send Us a Message:</h3>
+        <form id="contact-form" action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="social-media" style="text-align: center; padding: 30px 20px;">
+        <h2>Follow Us</h2>
+        <div class="social-links">
+<a href="https://www.facebook.com/dylan.brakob.5/" target="_blank">
+    <img src="C:/Users/brako/OneDrive/Desktop/MDTrailerRentals/Photos/facebook-icon.png" alt="Facebook" />
+</a>
+<a href="https://www.instagram.com/dylanbrakob/" target="_blank">
+    <img src="C:/Users/brako/OneDrive/Desktop/MDTrailerRentals/Photos/instagram-icon.jpg" alt="Instagram" />
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 MD Trailer Rentals. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

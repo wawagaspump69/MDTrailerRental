@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Trailer Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #faf8f5;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-size: 110%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('file:///C:/Users/brako/OneDrive/Desktop/MDTrailerRentals/Photos/mdflag.png');
+    background-size: 110%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5; /* Adjust this value for desired opacity */
+    z-index: -1; /* Keeps it behind the content */
+}
+
+
+header {
+    background-color: #000000;
+    color: #f7d130;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.trailer-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #f7d130;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 30, 2);
+    border: 2px solid #f7d130;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f7d130;
+    color: #000000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #c69c00;
+    transform: translateY(-2px);
+}
+
+.highlight {
+    color: #c61a09;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000000;
+    color: #f7d130;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.or-text {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-text {
+    display: block;
+    font-size: 2em;
+    color: #f7d130;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#contact-form input, #contact-form textarea, #contact-form input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    font-size: 1em;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    border-color: #c61a09;
+}
+
+#contact-form button {
+    background-color: #c61a09;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+}
+
+#contact-form button:hover {
+    background-color: #a31507;
+    transform: translateY(-2px);
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: #F8C600;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sticky-navbar ul li {
+    margin: 0 20px;
+}
+
+.sticky-navbar ul li a {
+    text-decoration: none;
+    color: #a31507;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sticky-navbar ul li a:hover {
+    color: black;
+}
+
+        @media (max-width: 768px) {
+            .sticky-navbar ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+#social-media .social-links img {
+    width: 32px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+#social-media .social-links img:hover {
+    transform: scale(1.2);
+}
+
+.upload-container {
+    background: #faf8f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.upload-container input[type="file"] {
+    display: block;
+    margin: 15px auto;
+}
+
+.upload-container button {
+    background-color: #c61a09;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-container button:hover {
+    background-color: #a31507;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.calendar-input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+
+        .price-display {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
