@@ -229,12 +229,31 @@ footer p {
     color: black;
 }
 
-        @media (max-width: 768px) {
-            .sticky-navbar ul {
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px; /* Reduce padding */
+    }
+
+    {
+     .sticky-navbar ul {
                 flex-direction: row;
                 text-align: center;
             }
         }
+    
+    .sticky-navbar {
+        padding: 10px 0; /* Reduce padding */
+    }
+
+    .sticky-navbar ul li {
+        margin: 0 10px; /* Reduce spacing between links */
+    }
+
+    .sticky-navbar ul li a {
+        font-size: 14px; /* Reduce font size */
+    }
+}
 
 #social-media .social-links img {
     width: 32px;
