@@ -24,22 +24,110 @@
         <p>Maryland's Go-To Trailer Rental Service</p>
     </header>
 
-    <section id="form-upload-section" style="padding: 30px 20px; text-align: center;">
-  <h2 style="color: red;">Download Our Form</h2>
-        <p>Download and fill out the form, then upload it here:</p>
-        <a href="Rental Form and Agreement.docx" download><button>Download Form</button></a>
+<section id="form-upload-section" style="padding: 30px 20px; text-align: center;">
+  <h2 style="color: red;">Fill Out Our Form</h2>
+  <p>Please fill out the form, then hit "Start Renting"</p>
 
-        <h2 style="color: red;">And</h2>
+  <!-- Form starts here -->
+  <form action="https://formspree.io/f/mqapzkap" method="POST">
 
-       <h2 style="color: red;">Upload Your Completed Form Here</h2>
-        <div class="upload-container">
-            <h3>Upload Form:</h3>
-            <form action="upload.php" method="post" enctype="multipart/form-data">
-                <input type="file" name="file" id="file" required>
-                <button type="submit">Start Renting</button>
-            </form>
-        </div>
-    </section>
+    <!-- Customer Information Section -->
+    <h3 style="color: red;">Customer Information</h3>
+    <label>
+      Name:
+      <input type="text" name="name" required>
+    </label><br><br>
+    <label>
+      Phone #:
+      <input type="tel" name="phone" required>
+    </label><br><br>
+    <label>
+      Date:
+      <input type="date" name="date" required>
+    </label><br><br>
+    <label>
+      Street Address:
+      <input type="text" name="street_address" required>
+    </label><br><br>
+    <label>
+      City:
+      <input type="text" name="city" required>
+    </label><br><br>
+    <label>
+      State:
+      <input type="text" name="state" required>
+    </label><br><br>
+    <label>
+      Zip:
+      <input type="text" name="zip" required>
+    </label><br><br>
+
+    <!-- Driver's License Information Section -->
+    <h3 style="color: red;">Driver's License Information</h3>
+    <label>
+      DL #:
+      <input type="text" name="dl_number" required>
+    </label><br><br>
+    <label>
+      State:
+      <input type="text" name="dl_state" required>
+    </label><br><br>
+    <label>
+      Expiration:
+      <input type="date" name="expiration" required>
+    </label><br><br>
+    <label>
+      DOB:
+      <input type="date" name="dob" required>
+    </label><br><br>
+    <label>
+      Insurance Provider:
+      <input type="text" name="insurance_provider" required>
+    </label><br><br>
+    <label>
+      Policy #:
+      <input type="text" name="policy_number" required>
+    </label><br><br>
+    <label>
+      Phone #:
+      <input type="tel" name="insurance_phone" required>
+    </label><br><br>
+
+    <!-- Rental Dates and Rates -->
+    <h3 style="color: red;">Rental Information</h3>
+    <label>
+      Check Out Date:
+      <input type="date" name="check_out_date" required>
+    </label><br><br>
+    <label>
+      Check Out Time:
+      <input type="time" name="check_out_time" required>
+    </label><br><br>
+    <label>
+      Check In Date:
+      <input type="date" name="check_in_date" required>
+    </label><br><br>
+    <label>
+      Check In Time:
+      <input type="time" name="check_in_time" required>
+    </label><br><br>
+    <label>
+      Rate $:
+      <input type="number" name="rate" required>
+    </label><br><br>
+    <label>
+      Duration (Days/Hours):
+      <input type="number" name="duration" required>
+    </label><br><br>
+
+    <!-- Submit Button -->
+    <h2 style="color: red;">Upload Your Completed Form Here</h2>
+    <div class="upload-container">
+      <h3>Upload Form:</h3>
+      <button type="submit">Start Renting</button>
+    </div>
+  </form>
+</section>
 
 <section>
     <div class="or-text">
