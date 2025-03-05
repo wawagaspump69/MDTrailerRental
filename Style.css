@@ -243,39 +243,39 @@ footer p {
 @media (max-width: 768px) {
 
         #contact-form label {
-        font-size: 16px; /* Adjust label font size for mobile */
+        font-size: 16px;
     }
 
     #contact-form input,
     #contact-form textarea {
-        font-size: 1em; /* Ensure text input is legible on mobile */
-        padding: 12px; /* Increase padding for better usability on mobile */
+        font-size: 1em;
+        padding: 12px;
     }
 
     #contact-form button {
-        padding: 15px; /* Increase button padding */
-        font-size: 1.2em; /* Make button text larger for readability */
+        padding: 15px;
+        font-size: 1.2em;
     }
     
         header {
-        padding: 10px 5px; /* Reduce padding */
+        padding: 10px 5px;
     }
 
-    font-size: 18px; /* Reduce header font size on mobile */
+    font-size: 18px;
     
         body::before {
-        background-size: 120%; /* Make the background image larger */
-        background-position: center center; /* Keep the background centered */
-        background-attachment: scroll; /* Use scroll instead of fixed for better performance */
+        background-size: 120%;
+        background-position: center center;
+        background-attachment: scroll;
     }
 
         footer {
-        padding: 10px 20px; /* Adjust padding for mobile */
-        width: auto; /* Allow footer to adjust width naturally */
+        padding: 10px 20px;
+        width: auto;
     }
     
          footer p {
-        font-size: 1em; /* Adjust font size for mobile */
+        font-size: 1em;
     }
     
 
@@ -288,15 +288,15 @@ footer p {
         }
     
     .sticky-navbar {
-        padding: 10px 0; /* Reduce padding */
+        padding: 10px 0;
     }
 
     .sticky-navbar ul li {
-        margin: 0 10px; /* Reduce spacing between links */
+        margin: 0 10px;
     }
 
     .sticky-navbar ul li a {
-        font-size: 14px; /* Reduce font size */
+        font-size: 14px;
     }
 }
 .upload-container {
