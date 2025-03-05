@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Trailer Rentals</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -14,19 +5,6 @@ body {
     padding: 0;
     background-color: #faf8f5;
     overflow-x: hidden;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-size: 110%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-x: hidden;
-    position: relative;
 }
 
 body::before {
@@ -45,7 +23,6 @@ body::before {
     z-index: -1;
 }
 
-
 header {
     background-color: #000000;
     color: #f7d130;
@@ -54,12 +31,6 @@ header {
     position: relative;
     z-index: 2;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.trailer-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
 
 h1 {
@@ -229,24 +200,25 @@ footer p {
     color: black;
 }
 
-
 @media (max-width: 768px) {
+    /* Header: Smaller padding and font size */
     header {
-        padding: 10px 5px;
+        padding: 20px 10px;
+        font-size: 18px;
     }
 
-    font-size: 18px;
+    h1 {
+        font-size: 2.5em; /* Reduced font size for header */
     }
-  
-{
-     .sticky-navbar ul {
-                flex-direction: row;
-                text-align: center;
-            }
-        }
-    
+
+    /* Sticky Navbar: Reduced padding and font size */
     .sticky-navbar {
         padding: 10px 0;
+    }
+
+    .sticky-navbar ul {
+        flex-direction: row; 
+        text-align: center;
     }
 
     .sticky-navbar ul li {
@@ -254,73 +226,47 @@ footer p {
     }
 
     .sticky-navbar ul li a {
-        font-size: 14px;
+        font-size: 14px; /* Smaller font size */
     }
 
-    body::before {
-        background-size: 120%;
-        background-position: center center;
-        background-attachment: scroll;
+    /* Buttons */
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
     }
 
+    /* Section: Reduced padding */
+    section {
+        padding: 20px;
+    }
+
+    /* Contact Form Inputs */
+    #contact-form input, #contact-form textarea, #contact-form input[type="file"] {
+        font-size: 0.9em;
+    }
+
+    /* Price display */
+    .price-display {
+        font-size: 1.1em;
+    }
+
+    /* Social Media Icons */
+    #social-media .social-links img {
+        width: 28px;
+        height: auto;
+    }
+
+    /* Upload container */
+    .upload-container {
+        padding: 15px;
+    }
+
+    .upload-container button {
+        padding: 8px 12px;
+    }
+
+    /* Calendar input adjustments */
+    .calendar-input {
+        padding: 6px;
+    }
 }
-
-#social-media .social-links img {
-    width: 32px;
-    height: auto;
-    margin: 0 10px;
-    transition: transform 0.2s;
-}
-
-#social-media .social-links img:hover {
-    transform: scale(1.2);
-}
-
-.upload-container {
-    background: #faf8f5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.upload-container input[type="file"] {
-    display: block;
-    margin: 15px auto;
-}
-
-.upload-container button {
-    background-color: #c61a09;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.upload-container button:hover {
-    background-color: #a31507;
-}
-
-.calendar-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.calendar-input {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    box-sizing: border-box;
-}
-
-
-        .price-display {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-    </style>
-</head>
