@@ -313,22 +313,22 @@ footer p {
         margin: 0;
         width: 100%;
         list-style: none;
-        flex-wrap: nowrap; /* Prevent wrapping */
-        overflow: hidden; /* Prevent overflow */
+        flex-wrap: nowrap; /* Prevent items from wrapping to a new line */
+        overflow: hidden; /* Ensure no overflow */
     }
 
     .sticky-navbar ul li {
-        margin: 0 5px; /* Reduce spacing between items */
+        margin: 0 5px; /* Adjust spacing between items */
+        display: flex; /* Ensure items are in a row */
         flex-shrink: 1; /* Allow items to shrink if necessary */
     }
 
     .sticky-navbar ul li a {
-        font-size: 12px; /* Smaller text size */
-        padding: 5px 8px; /* Reduced padding inside links */
-        white-space: nowrap; /* Prevent text from wrapping */
+        font-size: 12px; /* Reduce font size */
+        padding: 5px 8px; /* Reduce padding inside links */
+        white-space: nowrap; /* Prevent wrapping of text */
     }
 }
-
 
     </style>
 </head>
