@@ -249,6 +249,10 @@ footer p {
         background-position: center center; /* Keep the background centered */
         background-attachment: scroll; /* Use scroll instead of fixed for better performance */
     }
+
+         footer p {
+        font-size: 1em; /* Adjust font size for mobile */
+    }
     
     header {
         padding: 10px 5px; /* Reduce padding */
