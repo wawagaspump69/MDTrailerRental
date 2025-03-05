@@ -294,69 +294,53 @@ footer p {
             margin-top: 10px;
         }
 
-/* Initially hide the navigation links on mobile */
-#nav-links {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+ @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            .nav-links {
+                display: none;
+                background-color: #000;
+                position: absolute;
+                top: 60px;
+                width: 100%;
+                left: 0;
+            }
 
-#nav-links li {
-    margin: 10px 0;
-}
+            .nav-links.show-nav {
+                display: block;
+            }
 
-#nav-links li a {
-    text-decoration: none;
-    color: #a31507;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+            .nav-links ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                background-color: #000;
+            }
 
-/* Hamburger menu styles */
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    justify-content: space-between;
-    align-items: center;
-}
+            .nav-links ul li {
+                margin: 10px 0;
+            }
 
-.hamburger-menu .bar {
-    width: 100%;
-    height: 5px;
-    background-color: #a31507;
-    transition: transform 0.3s ease-in-out;
-}
+            .nav-links ul li a {
+                font-size: 18px;
+                color: #f7d130;
+                text-decoration: none;
+                padding: 10px;
+            }
+        }
 
-/* Show the menu when hamburger is clicked */
-.show-nav #nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Show hamburger menu on small screens */
-@media (max-width: 768px) {
-    #nav-links {
-        width: 100%;
-    }
-
-    .sticky-navbar ul {
-        display: none; /* Hide the nav links initially */
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-}
-
+        footer {
+            background-color: #000000;
+            color: #f7d130;
+            text-align: center;
+            padding: 20px;
+        }
 
     </style>
 </head>
