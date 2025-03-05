@@ -42,27 +42,14 @@
       <input type="tel" name="phone" required>
     </label><br><br>
     <label>
-      Date:
-      <input type="date" name="date" required>
-    </label><br><br>
-    <label>
-      Street Address:
-      <input type="text" name="street_address" required>
-    </label><br><br>
-    <label>
       City:
       <input type="text" name="city" required>
-    </label><br><br>
-    <label>
-      State:
-      <input type="text" name="state" required>
     </label><br><br>
     <label>
       Zip:
       <input type="text" name="zip" required>
     </label><br><br>
 
-    <!-- Driver's License Information Section -->
     <h3 style="color: red;">Driver's License Information</h3>
     <label>
       DL #:
@@ -93,32 +80,24 @@
       <input type="tel" name="insurance_phone" required>
     </label><br><br>
 
-    <!-- Rental Dates and Rates -->
     <h3 style="color: red;">Rental Information</h3>
     <label>
-      Check Out Date:
+      Rental Start Date:
       <input type="date" name="check_out_date" required>
     </label><br><br>
     <label>
-      Check Out Time:
-      <input type="time" name="check_out_time" required>
-    </label><br><br>
-    <label>
-      Check In Date:
+     Rental Return Date:
       <input type="date" name="check_in_date" required>
     </label><br><br>
     <label>
-      Check In Time:
-      <input type="time" name="check_in_time" required>
+      Discount Code (if any):
+      <input type="text" id="discountCode" name="discountCode">
     </label><br><br>
+      
     <label>
-      Rate $:
-      <input type="number" name="rate" required>
+      Total Price: $<span id="totalPrice">0.00</span>
     </label><br><br>
-    <label>
-      Duration (Days/Hours):
-      <input type="number" name="duration" required>
-    </label><br><br>
+
 
     <!-- Submit Button -->
     <h2 style="color: red;">Upload Your Completed Form Here</h2>
