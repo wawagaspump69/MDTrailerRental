@@ -28,10 +28,8 @@
   <h2 style="color: red;">Fill Out Our Form</h2>
   <p>Please fill out the form, then hit "Start Renting"</p>
 
-  <!-- Form starts here -->
   <form action="https://formspree.io/f/mqapzkap" method="POST">
 
-    <!-- Customer Information Section -->
     <h3 style="color: red;">Customer Information</h3>
     <label>
       Name:
@@ -82,7 +80,6 @@
 
     <h3 style="color: red;">Rental Information</h3>
     
-    <!-- Trailer Type Dropdown -->
     <label>
       Select Trailer Type:
       <select id="trailerType" name="trailerType">
@@ -93,8 +90,7 @@
         <option value="utility">Utility</option>
       </select>
     </label><br><br>
-
-    <!-- Date Pickers -->
+      
     <label>
       Rental Start Date:
       <input type="date" id="check_out_date" name="check_out_date" required>
@@ -104,21 +100,16 @@
       <input type="date" id="check_in_date" name="check_in_date" required>
     </label><br><br>
 
-    <!-- Discount Code Input -->
     <label>
       Discount Code (if any):
       <input type="text" id="discountCode" name="discountCode">
     </label><br><br>
     
-    <!-- Total Price Display -->
     <label>
       Total Price: $<span id="totalPrice">0.00</span>
     </label><br><br>
 
-    <!-- Submit Button -->
-    <h2 style="color: red;">Upload Your Completed Form Here</h2>
     <div class="upload-container">
-      <h3>Upload Form:</h3>
       <button type="submit">Start Renting</button>
     </div>
   </form>
@@ -209,7 +200,6 @@ function updatePrice() {
     document.getElementById("totalPrice").innerText = finalPrice;
 }
 
-// Event listeners for dynamic updates when dates or trailer type change
 document.getElementById('check_out_date').addEventListener('change', updatePrice);
 document.getElementById('check_in_date').addEventListener('change', updatePrice);
 document.getElementById('trailerType').addEventListener('change', updatePrice);
