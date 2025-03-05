@@ -294,74 +294,66 @@ footer p {
             margin-top: 10px;
         }
 
-/* Mobile Specific */
+/* Initially hide the navigation links on mobile */
+#nav-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-links li {
+    margin: 10px 0;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: #a31507;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu .bar {
+    width: 100%;
+    height: 5px;
+    background-color: #a31507;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Show the menu when hamburger is clicked */
+.show-nav #nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Show hamburger menu on small screens */
 @media (max-width: 768px) {
-    /* Sticky Navbar */
-    .sticky-navbar {
-        position: fixed;
+    #nav-links {
         width: 100%;
-        top: 0;
-        left: 0;
-        background-color: #F8C600;
-        padding: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
     }
 
-    /* Navbar items (hidden initially) */
     .sticky-navbar ul {
-        display: none; /* Hidden by default */
+        display: none; /* Hide the nav links initially */
         flex-direction: column;
-        background-color: #F8C600;
-        width: 100%;
-        position: absolute;
-        top: 50px; /* Below the sticky navbar */
-        left: 0;
-        padding: 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .sticky-navbar ul.show {
-        display: flex; /* Show when toggled */
-    }
-
-    /* Styling for menu items */
-    .sticky-navbar ul li {
         text-align: center;
-        padding: 15px 0;
-        border-bottom: 1px solid #a31507; /* Divider between items */
-    }
-
-    .sticky-navbar ul li:last-child {
-        border-bottom: none;
-    }
-
-    .sticky-navbar ul li a {
-        font-size: 18px;
-        color: #a31507;
-        display: block;
         width: 100%;
-        text-decoration: none;
     }
 
-    /* Hamburger Button Styling */
-    .menu-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        font-size: 30px; /* Increased font size for better visibility */
-        color: #a31507;
-        background: #fff;
-        border: 2px solid #a31507;
-        padding: 15px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%; /* Circular button */
-        position: absolute;
-        top: 15px;
-        right: 20px; /* Positioned at the top-right corner */
-        z-index: 1001; /* Ensure it stays on top */
+    .hamburger-menu {
+        display: block;
     }
 }
 
