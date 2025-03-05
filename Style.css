@@ -294,47 +294,43 @@ footer p {
         }
 
 /* MOBILE RESPONSIVENESS FIXES */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     /* Make Sticky Navbar Smaller */
     .sticky-navbar {
-        height: 50px; /* Reduce overall height */
-        padding: 2px 10px; /* Less padding */
-        overflow: hidden; /* Prevent overflow but still control layout */
+        height: 40px; /* Reduce overall height */
+        padding: 1px 8px; /* Less padding */
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%; /* Ensure it takes up the full width */
-        box-sizing: border-box; /* Include padding in width calculation */
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .sticky-navbar ul {
-        display: flex; /* Use flexbox to control alignment */
-        flex-direction: row; /* Keep items in a row */
-        justify-content: center; /* Center items */
-        align-items: center; /* Vertically align items */
+        display: flex;
+        justify-content: space-evenly;  /* Distribute items evenly */
         padding: 0;
-        gap: 5px; /* Adjust spacing between items */
+        margin: 0;
+        width: 90%;
+        list-style: none;
         flex-wrap: nowrap; /* Prevent items from wrapping */
-        width: 100%; /* Ensure full width for the navbar */
-        box-sizing: border-box; /* Include padding in width calculation */
-        overflow: auto; /* Allow scrolling if necessary */
     }
 
     .sticky-navbar ul li {
-        margin: 0; /* Remove margin from individual list items */
-        display: flex; /* Make each list item a flex container */
-        align-items: center; /* Vertically center the text inside */
-        flex-shrink: 1; /* Allow items to shrink to fit */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 1;  /* Allow items to shrink if necessary */
+        margin: 0 3px; /* Adjust space between items */
     }
 
     .sticky-navbar ul li a {
-        font-size: 14px; /* Shrink text size */
-        padding: 5px 8px; /* Reduce padding inside links */
-        white-space: nowrap; /* Prevent text from wrapping to the next line */
-        overflow: hidden; /* Hide overflow text */
-        text-overflow: ellipsis; /* Add ellipsis if text is too long */
+        font-size: 10px; /* Shrink text size to fit items */
+        padding: 4px 7px; /* Reduce padding inside links */
+        white-space: nowrap; /* Prevent wrapping of text */
     }
 }
+
 
     </style>
 </head>
