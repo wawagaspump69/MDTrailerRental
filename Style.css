@@ -293,5 +293,40 @@ footer p {
             margin-top: 10px;
         }
 
+/* MOBILE RESPONSIVENESS FIXES */
+@media (max-width: 768px) {
+    /* Fix Sticky Navbar for Mobile */
+    .sticky-navbar {
+        padding: 5px 0; /* Reduce padding */
+    }
+
+    .sticky-navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .sticky-navbar ul li {
+        margin: 5px 0; /* Reduce spacing */
+    }
+
+    .sticky-navbar ul li a {
+        font-size: 16px; /* Smaller font for mobile */
+    }
+
+    /* Reduce Heading Size on Mobile */
+    h1 {
+        font-size: 2em; /* Adjust heading size */
+    }
+
+    /* Improve Calendar Input Box Visibility */
+    .calendar-input {
+        font-size: 1.1em;
+        border: 2px solid #f7d130; /* Make input stand out */
+        background-color: white;
+        padding: 8px;
+    }
+}
+
+
     </style>
 </head>
