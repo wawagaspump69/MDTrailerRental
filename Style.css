@@ -277,15 +277,11 @@ footer p {
          footer p {
         font-size: 1em;
     }
-    
 
-  
-{
      .sticky-navbar ul {
                 flex-direction: row;
                 text-align: center;
             }
-        }
     
     .sticky-navbar {
         padding: 10px 0;
