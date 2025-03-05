@@ -294,7 +294,58 @@ footer p {
             margin-top: 10px;
         }
 
+@media (max-width: 768px) {
+    .sticky-navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #F8C600;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
+    .sticky-navbar ul {
+        display: none; /* Hide menu items initially */
+        flex-direction: column;
+        background-color: #F8C600;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .sticky-navbar ul.show {
+        display: flex; /* Show when toggled */
+    }
+
+    .sticky-navbar ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .sticky-navbar ul li a {
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    /* Hamburger Icon */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #a31507;
+        background: none;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+}
 
     </style>
 </head>
