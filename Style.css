@@ -232,7 +232,7 @@ footer p {
 .sticky-navbar ul li a {
     text-decoration: none;
     color: #a31507;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -240,6 +240,7 @@ footer p {
 .sticky-navbar ul li a:hover {
     color: black;
 }
+
 
 
 @media (max-width: 768px) {
