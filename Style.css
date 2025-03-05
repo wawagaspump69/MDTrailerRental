@@ -242,6 +242,21 @@ footer p {
 
 @media (max-width: 768px) {
 
+        #contact-form label {
+        font-size: 16px; /* Adjust label font size for mobile */
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 1em; /* Ensure text input is legible on mobile */
+        padding: 12px; /* Increase padding for better usability on mobile */
+    }
+
+    #contact-form button {
+        padding: 15px; /* Increase button padding */
+        font-size: 1.2em; /* Make button text larger for readability */
+    }
+    
         header {
         padding: 10px 5px; /* Reduce padding */
     }
