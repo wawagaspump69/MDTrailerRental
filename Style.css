@@ -294,11 +294,11 @@ footer p {
         }
 
 /* MOBILE RESPONSIVENESS FIXES */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     /* Make Sticky Navbar Smaller */
     .sticky-navbar {
         height: 50px; /* Reduce overall height */
-        padding: 1px 8px; /* Less padding */
+        padding: 2px 10px; /* Less padding */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -307,29 +307,28 @@ footer p {
     }
 
     .sticky-navbar ul {
-        display: row; /* Force items to align in a row */
-        justify-content: space-between;  /* Distribute items across the navbar */
+        display: flex; /* Display items in a row */
+        justify-content: center; /* Center items horizontally */
         padding: 0;
         margin: 0;
         width: 100%;
         list-style: none;
-        flex-wrap: nowrap; /* Prevent items from wrapping to a new line */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow: hidden; /* Prevent overflow */
     }
 
     .sticky-navbar ul li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 1;  /* Allow items to shrink if necessary */
-        margin: 0 4px; /* Adjust space between items */
+        margin: 0 5px; /* Reduce spacing between items */
+        flex-shrink: 1; /* Allow items to shrink if necessary */
     }
 
     .sticky-navbar ul li a {
-        font-size: 12px; /* Shrink text size to fit items */
-        padding: 4px 7px; /* Reduce padding inside links */
-        white-space: nowrap; /* Prevent wrapping of text inside links */
+        font-size: 12px; /* Smaller text size */
+        padding: 5px 8px; /* Reduced padding inside links */
+        white-space: nowrap; /* Prevent text from wrapping */
     }
 }
+
 
     </style>
 </head>
