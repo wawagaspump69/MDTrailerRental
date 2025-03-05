@@ -241,6 +241,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+        header {
+        padding: 10px 5px; /* Reduce padding */
+    }
+
+    font-size: 18px; /* Reduce header font size on mobile */
     
         body::before {
         background-size: 120%; /* Make the background image larger */
@@ -257,11 +263,6 @@ footer p {
         font-size: 1em; /* Adjust font size for mobile */
     }
     
-    header {
-        padding: 10px 5px; /* Reduce padding */
-    }
-
-    font-size: 18px; /* Reduce header font size on mobile */
     }
   
 {
