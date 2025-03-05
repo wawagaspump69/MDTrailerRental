@@ -303,17 +303,18 @@ footer p {
         background-color: #F8C600;
         padding: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
     }
 
     .sticky-navbar ul {
-        display: none; /* Hide menu items initially */
+        display: none; /* Hidden by default */
         flex-direction: column;
         background-color: #F8C600;
         width: 100%;
         position: absolute;
         top: 50px;
         left: 0;
-        padding: 10px 0;
+        padding: 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
@@ -323,29 +324,40 @@ footer p {
 
     .sticky-navbar ul li {
         text-align: center;
-        padding: 10px 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #a31507; /* Divider between items */
+    }
+
+    .sticky-navbar ul li:last-child {
+        border-bottom: none;
     }
 
     .sticky-navbar ul li a {
         font-size: 18px;
-        padding: 10px;
+        color: #a31507;
         display: block;
         width: 100%;
+        text-decoration: none;
     }
 
-    /* Hamburger Icon */
+    /* Hamburger Button */
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
         font-size: 24px;
         color: #a31507;
-        background: none;
-        border: none;
+        background: #fff;
+        border: 2px solid #a31507;
         padding: 10px;
-        width: 100%;
-        text-align: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        position: relative;
     }
 }
+
 
     </style>
 </head>
