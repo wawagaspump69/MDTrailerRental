@@ -294,5 +294,79 @@ footer p {
             margin-top: 10px;
         }
 
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2em; 
+        letter-spacing: 1px;
+    }
+
+    .sticky-navbar ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .sticky-navbar ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px 10px;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .or-text {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .scroll-text {
+        font-size: 1.5em;
+    }
+
+    #contact-form input, #contact-form textarea {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #contact-form button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    .upload-container {
+        padding: 15px;
+    }
+
+    .upload-container button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .calendar-container {
+        gap: 5px;
+    }
+
+    .price-display {
+        font-size: 1em;
+    }
+}
+
     </style>
 </head>
