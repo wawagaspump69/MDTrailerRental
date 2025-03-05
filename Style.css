@@ -263,7 +263,7 @@ footer p {
         font-size: 1em; /* Adjust font size for mobile */
     }
     
-    }
+
   
 {
      .sticky-navbar ul {
@@ -329,6 +329,8 @@ footer p {
             font-size: 1.2em;
             margin-top: 10px;
         }
+
+    }
 
     </style>
 </head>
