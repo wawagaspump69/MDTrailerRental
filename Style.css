@@ -16,6 +16,18 @@ body {
     overflow-x: hidden;
 }
 
+#social-media .social-links img {
+    width: 32px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+#social-media .social-links img:hover {
+    transform: scale(1.2);
+}
+
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -264,18 +276,6 @@ footer p {
         font-size: 14px; /* Reduce font size */
     }
 }
-
-#social-media .social-links img {
-    width: 32px;
-    height: auto;
-    margin: 0 10px;
-    transition: transform 0.2s;
-}
-
-#social-media .social-links img:hover {
-    transform: scale(1.2);
-}
-
 .upload-container {
     background: #faf8f5;
     padding: 20px;
