@@ -232,10 +232,10 @@ footer p {
 
 @media (max-width: 768px) {
     header {
-        padding: 10px 5px; /* Reduce padding */
+        padding: 10px 5px;
     }
 
-    font-size: 18px; /* Reduce header font size on mobile */
+    font-size: 18px;
     }
   
 {
@@ -246,16 +246,23 @@ footer p {
         }
     
     .sticky-navbar {
-        padding: 10px 0; /* Reduce padding */
+        padding: 10px 0;
     }
 
     .sticky-navbar ul li {
-        margin: 0 10px; /* Reduce spacing between links */
+        margin: 0 10px;
     }
 
     .sticky-navbar ul li a {
-        font-size: 14px; /* Reduce font size */
+        font-size: 14px;
     }
+
+    body::before {
+        background-size: 120%;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
 }
 
 #social-media .social-links img {
