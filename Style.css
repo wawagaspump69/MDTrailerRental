@@ -307,7 +307,7 @@ footer p {
     }
 
     .sticky-navbar ul {
-        display: flex; /* Force items to align in a row */
+        display: row; /* Force items to align in a row */
         justify-content: space-between;  /* Distribute items across the navbar */
         padding: 0;
         margin: 0;
