@@ -6,34 +6,22 @@
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" href="Style.css">
-
-    <nav class="sticky-navbar">
-        <div class="hamburger-menu" id="hamburger-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
     
 </head>
 
 <body>
-<nav class="sticky-navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Fleet.html">Our Fleet</a></li>
-        <li><a href="FAQs.html">FAQs</a></li>
-        <li><a href="How-it-works.html">The Process</a></li>
-        <li><a href="rent-now.html">Rent Now!</a></li>
-        <li><a href="testimonials.html">Hear Our Customers</a></li>
-    </ul>
-</nav>
+ <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <div id="nav-links" class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
 <header style="background-color: #000000; 
               background-image: url('Logo.jpg'); 
@@ -92,16 +80,16 @@
     <p>&copy; 2024 MD Trailer Rental. All rights reserved.</p>
 </footer>
 
-    <script>
-    // Get the hamburger menu and nav links
-    const hamburger = document.getElementById('hamburger-menu');
-    const navLinks = document.getElementById('nav-links');
+     <script>
+        // Get the hamburger menu and nav links
+        const hamburger = document.getElementById('hamburger-menu');
+        const navLinks = document.getElementById('nav-links');
 
-    // Add event listener to toggle the nav links
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show-nav');
-    });
-</script>
+        // Add event listener to toggle the nav links visibility
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show-nav');
+        });
+    </script>
     
 </body>
 </html>
