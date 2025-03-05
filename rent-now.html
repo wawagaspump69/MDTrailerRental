@@ -123,7 +123,7 @@
     </div>
   </form>
 </section>
-
+ <script>
 function calculatePrice(startDate, endDate, trailerType) {
     const start = new Date(startDate);
     const end = new Date(endDate);
@@ -217,6 +217,7 @@ document.getElementById('discountCode').addEventListener('input', updatePrice);
 
 // Initialize the price when the page loads
 window.onload = updatePrice;
+     </script>
 
 <section>
     <div class="or-text">
