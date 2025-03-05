@@ -294,7 +294,7 @@ footer p {
         }
 
 /* MOBILE RESPONSIVENESS FIXES */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     /* Make Sticky Navbar Smaller */
     .sticky-navbar {
         height: 50px; /* Reduce overall height */
@@ -302,18 +302,23 @@ footer p {
     }
 
     .sticky-navbar ul {
+        display: flex; /* Use flexbox to control alignment */
         flex-direction: row; /* Keep items in a row */
         justify-content: center; /* Center items */
+        align-items: center; /* Vertically align items */
         padding: 0;
     }
 
     .sticky-navbar ul li {
         margin: 0 5px; /* Reduce spacing between items */
+        display: flex; /* Make each list item a flex container */
+        align-items: center; /* Vertically center the text inside */
     }
 
     .sticky-navbar ul li a {
         font-size: 14px; /* Shrink text size */
         padding: 5px 8px; /* Reduce padding inside links */
+        white-space: nowrap; /* Prevent text from wrapping to the next line */
     }
 }
 
