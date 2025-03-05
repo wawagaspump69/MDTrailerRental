@@ -81,23 +81,39 @@
     </label><br><br>
 
     <h3 style="color: red;">Rental Information</h3>
+    
+    <!-- Trailer Type Dropdown -->
+    <label>
+      Select Trailer Type:
+      <select id="trailerType" name="trailerType">
+        <option value="enclosed">Enclosed</option>
+        <option value="dump">Dump</option>
+        <option value="motorcycle">Motorcycle</option>
+        <option value="flatbed">Flatbed</option>
+        <option value="utility">Utility</option>
+      </select>
+    </label><br><br>
+
+    <!-- Date Pickers -->
     <label>
       Rental Start Date:
-      <input type="date" name="check_out_date" required>
+      <input type="date" id="check_out_date" name="check_out_date" required>
     </label><br><br>
     <label>
-     Rental Return Date:
-      <input type="date" name="check_in_date" required>
+      Rental Return Date:
+      <input type="date" id="check_in_date" name="check_in_date" required>
     </label><br><br>
+
+    <!-- Discount Code Input -->
     <label>
       Discount Code (if any):
       <input type="text" id="discountCode" name="discountCode">
     </label><br><br>
-      
+    
+    <!-- Total Price Display -->
     <label>
       Total Price: $<span id="totalPrice">0.00</span>
     </label><br><br>
-
 
     <!-- Submit Button -->
     <h2 style="color: red;">Upload Your Completed Form Here</h2>
@@ -107,6 +123,103 @@
     </div>
   </form>
 </section>
+Updated JavaScript:
+javascript
+Copy
+Edit
+function calculatePrice(startDate, endDate, trailerType) {
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    const diffInTime = end - start;
+    const days = diffInTime / (1000 * 3600 * 24) + 1;
+
+    if (days <= 0) return 0;
+
+    let weekdayRate, weekendRate, weeklyRate;
+
+    // Define rates based on trailer type
+    if (trailerType === 'enclosed') {
+        weekdayRate = 150;
+        weekendRate = 165;
+        weeklyRate = 930;
+    } else if (trailerType === 'dump') {
+        weekdayRate = 130;
+        weekendRate = 145;
+        weeklyRate = 810;
+    } else if (trailerType === 'motorcycle') {
+        weekdayRate = 40;
+        weekendRate = 45;
+        weeklyRate = 205;
+    } else if (trailerType === 'flatbed') {
+        weekdayRate = 120;
+        weekendRate = 135;
+        weeklyRate = 750;
+    } else if (trailerType === 'utility') {
+        weekdayRate = 60;
+        weekendRate = 70;
+        weeklyRate = 380;
+    }
+
+    let totalPrice = 0;
+    for (let i = 0; i < days; i++) {
+        let currentDay = new Date(start);
+        currentDay.setDate(start.getDate() + i);
+        const dayOfWeek = currentDay.getDay();
+
+        if (dayOfWeek === 4 || dayOfWeek === 5 || dayOfWeek === 6) {
+            totalPrice += weekendRate;
+        } else {
+            totalPrice += weekdayRate;
+        }
+    }
+
+    if (days > 7) {
+        totalPrice = weeklyRate + (days - 7) * weekdayRate;
+    } else if (days === 7) {
+        totalPrice = weeklyRate;
+    }
+
+    if (days > 14) {
+        totalPrice = 2 * weeklyRate + (days - 14) * weekdayRate;
+    }
+
+    return totalPrice;
+}
+
+function applyDiscount(price, discountCode) {
+    const validDiscounts = { '15OFF': 0.15 };
+    let discount = 0;
+
+    if (validDiscounts[discountCode]) {
+        discount = validDiscounts[discountCode];
+    }
+
+    return price - (price * discount);
+}
+
+function updatePrice() {
+    const startDate = document.getElementById("check_out_date").value;
+    const endDate = document.getElementById("check_in_date").value;
+    const trailerType = document.getElementById("trailerType").value;
+    const discountCode = document.getElementById("discountCode").value;
+
+    if (!startDate || !endDate) return;
+
+    const totalPrice = calculatePrice(startDate, endDate, trailerType);
+    const discountedPrice = applyDiscount(totalPrice, discountCode);
+    const finalPrice = Math.floor(discountedPrice);  // Round down to nearest dollar
+
+    document.getElementById("totalPrice").innerText = finalPrice;
+}
+
+// Event listeners for dynamic updates when dates or trailer type change
+document.getElementById('check_out_date').addEventListener('change', updatePrice);
+document.getElementById('check_in_date').addEventListener('change', updatePrice);
+document.getElementById('trailerType').addEventListener('change', updatePrice);
+document.getElementById('discountCode').addEventListener('input', updatePrice);
+
+// Initialize the price when the page loads
+window.onload = updatePrice;
 
 <section>
     <div class="or-text">
