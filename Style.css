@@ -232,10 +232,13 @@ footer p {
 
 @media (max-width: 768px) {
     header {
-        padding: 20px 10px; /* Reduce padding */
+        padding: 10px 5px; /* Reduce padding */
     }
 
-    {
+    font-size: 18px; /* Reduce header font size on mobile */
+    }
+  
+{
      .sticky-navbar ul {
                 flex-direction: row;
                 text-align: center;
