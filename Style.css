@@ -297,8 +297,8 @@ footer p {
 @media (max-width: 768px) {
     /* Make Sticky Navbar More Compact */
     .sticky-navbar {
-        height: 50px; /* Reduce navbar height */
-        padding: 5px 15px; /* Balanced padding */
+        height: 60px; /* Reduce navbar height */
+        padding: 5px 10px; /* Balanced padding */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -316,7 +316,7 @@ footer p {
 
     .sticky-navbar ul li {
         list-style: none;
-        margin: 0 8px; /* Give breathing room between items */
+        margin: 0 6px; /* Give breathing room between items */
     }
 
     .sticky-navbar ul li a {
