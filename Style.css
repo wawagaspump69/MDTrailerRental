@@ -231,7 +231,7 @@ footer p {
 
         @media (max-width: 768px) {
             .sticky-navbar ul {
-                flex-direction: column;
+                flex-direction: row;
                 text-align: center;
             }
         }
