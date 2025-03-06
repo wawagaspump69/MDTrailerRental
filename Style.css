@@ -345,15 +345,18 @@ footer p {
 
 /* Blog Post Styles */
 .blog-post {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 30, 0.2);
     border: 2px solid #f7d130;
-    padding: 20px;
+    padding: 30px;
     margin: 40px auto;
-    max-width: 1200px;
+    max-width: 800px; /* Restrict the width */
+    width: 100%; /* Make sure it fits within the screen */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     line-height: 1.8;
+    position: relative;
+    z-index: 1; /* Ensure it sits above any background images */
 }
 
 .blog-post:hover {
@@ -361,24 +364,38 @@ footer p {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* Title */
 .blog-post h1 {
     font-size: 3em;
     color: #f7d130;
+    text-align: center; /* Center the title */
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 20px;
     animation: fadeIn 2s ease-in-out;
 }
 
-.blog-post p {
+/* Subtitle and Paragraphs */
+.blog-post h2, .blog-post p {
     font-size: 1.2em;
     color: #333;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
+/* Author and Date */
+.blog-post .author, .blog-post .date {
+    font-size: 1.1em;
+    color: #555;
+    font-style: italic;
+}
+
+/* Content section */
 .blog-post .content {
     margin-top: 20px;
 }
 
+/* Button */
 .blog-post .btn-read-more {
     display: inline-block;
     background-color: #f7d130;
@@ -389,6 +406,10 @@ footer p {
     margin-top: 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-weight: bold;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 .blog-post .btn-read-more:hover {
@@ -396,27 +417,18 @@ footer p {
     transform: translateY(-2px);
 }
 
-.blog-post .date {
-    font-size: 1em;
-    color: #c61a09;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.blog-post .author {
-    font-size: 1.1em;
-    color: #555;
-    font-style: italic;
-}
-
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .blog-post {
-        padding: 15px;
+        padding: 20px;
     }
 
     .blog-post h1 {
         font-size: 2.5em;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5em;
     }
 
     .blog-post p {
@@ -448,6 +460,10 @@ footer p {
         font-size: 3.5em;
     }
 
+    .blog-post h2 {
+        font-size: 2em;
+    }
+
     .blog-post p {
         font-size: 1.2em;
     }
@@ -465,6 +481,7 @@ footer p {
         font-size: 1.2em;
     }
 }
+
 
 
     </style>
