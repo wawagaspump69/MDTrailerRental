@@ -56,34 +56,6 @@ body::before {
     z-index: -1;
 }
 
-.blog-post-content {
-   section {
-    padding: 40px 20px;
-    margin: 40px auto;
-    max-width: 1200px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 30, 2);
-    border: 2px solid #f7d130;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-}
-
-
-header {
-    background-color: #000000;
-    color: #f7d130;
-    text-align: center;
-    padding: 40px 20px;
-    position: relative;
-    z-index: 2;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
 .trailer-card img {
     max-width: 100%;
     height: auto;
