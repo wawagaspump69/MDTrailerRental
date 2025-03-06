@@ -348,42 +348,7 @@ footer p {
 
     }
 
-.blog-post-content {
-    background-color: #fff; /* White background for the blog content */
-    border: 2px solid #FFD700; /* Yellow border */
-    padding: 20px; /* Padding inside the box */
-    margin: 20px auto; /* Center the content with margin */
-    max-width: 900px; /* Limit the width of the content */
-    border-radius: 8px; /* Rounded corners for the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
 
-/* Hover effect for the blog post box */
-.blog-post-content:hover {
-    transform: translateY(-5px); /* Lift the box on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
-/* Style for the text and headings inside the post */
-.blog-post-content p {
-    line-height: 1.6; /* Increase line spacing for readability */
-    font-size: 1.1rem; /* Slightly larger font size for readability */
-    color: #333; /* Dark text color */
-}
-
-.blog-post-content h2 {
-    font-size: 1.5rem; /* Larger size for subheadings */
-    margin-top: 20px; /* Space before each heading */
-    color: #FFD700; /* Yellow color for headings */
-}
-
-/* Ensure images inside blog posts are responsive */
-.blog-post-content img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for images */
-}
 
     </style>
 </head>
