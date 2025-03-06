@@ -5,55 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="stylesheet" href="Style.css">
- 
+    <link rel="stylesheet" href="Style.css">
+
     <style>
         @media (max-width: 768px) {
             header {
-                padding: 40px 0;
-                height: 250px;
-                background-size: 100% 100%;
+                padding: 20px 0;  /* Reduce padding */
+                height: 200px;  /* Reduce height */
+                background-size: contain;  /* Ensures full image is visible */
+                background-position: center;
             }
         }
     </style>
-    
 </head>
 
 <body>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-<link rel="stylesheet" href="Style.css">
-</head>
+    <nav class="sticky-navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Fleet.html">Our Fleet</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="How-it-works.html">The Process</a></li>
+            <li><a href="rent-now.html">Rent Now!</a></li>
+            <li><a href="testimonials.html">Hear Our Customers</a></li>
+        </ul>
+    </nav>
 
-<body>
-<nav class="sticky-navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Fleet.html">Our Fleet</a></li>
-        <li><a href="FAQs.html">FAQs</a></li>
-        <li><a href="How-it-works.html">The Process</a></li>
-        <li><a href="rent-now.html">Rent Now!</a></li>
-        <li><a href="testimonials.html">Hear Our Customers</a></li>
-    </ul>
-</nav>
-
-<header style="background-color: #000000; 
-              background-image: url('Logo.jpg'); 
-              background-size: cover; 
-              background-position: center; 
-              background-repeat: no-repeat; 
-              color: #f7d130; 
-              text-align: center; 
-              padding: 80px 0px; 
-              height: 360px; 
-              position: relative; 
-              z-index: 2; 
-              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);">
-    
-</header>
+    <header id="custom-header" style="background-color: #000000; 
+                  background-image: url('Logo.jpg'); 
+                  background-size: cover; 
+                  background-position: center; 
+                  background-repeat: no-repeat; 
+                  color: #f7d130; 
+                  text-align: center; 
+                  padding: 80px 0px; 
+                  height: 360px; 
+                  position: relative; 
+                  z-index: 2; 
+                  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);">
+    </header>
 
 <section id="home">
     <h2>Welcome to MD Trailer Rental!</h2>
