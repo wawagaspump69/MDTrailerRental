@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Trailer Rental Blog</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <nav class="sticky-navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Fleet.html">Our Fleet</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="How-it-works.html">The Process</a></li>
+            <li><a href="rent-now.html">Rent Now!</a></li>
+            <li><a href="testimonials.html">Hear Our Customers</a></li>
+            <li><a href="blog.html">Blog</a></li> <!-- Updated link -->
+        </ul>
+    </nav>
+
+    <header>
+        <h1>MD Trailer Rental Blog</h1>
+        <p>Helpful tips, news, and updates about trailer rentals and services in Maryland.</p>
+    </header>
+
+    <!-- Blog Section -->
+    <section id="blog-posts">
+        <h2 class="section-title" style="color: #D00000;">Latest Blog Posts</h2>
+
+        <!-- Blog Post 1 -->
+        <article class="blog-post">
+            <h3 class="post-title"><a href="post1.html">How to Choose the Right Trailer for Your Needs</a></h3>
+            <p class="post-date">Published on March 1, 2024</p>
+            <p class="post-excerpt">Choosing the right trailer can be tricky. In this post, we’ll walk you through the different types of trailers and how to pick the best one for your hauling needs.</p>
+            <a href="post1.html" class="read-more">Read More</a>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-post">
+            <h3 class="post-title"><a href="post2.html">Tips for Safe Trailer Towing</a></h3>
+            <p class="post-date">Published on February 15, 2024</p>
+            <p class="post-excerpt">Towing a trailer requires knowledge and preparation. Learn the essential tips to ensure safe towing and avoid accidents on the road.</p>
+            <a href="post2.html" class="read-more">Read More</a>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-post">
+            <h3 class="post-title"><a href="post3.html">What to Do if Your Trailer Breaks Down</a></h3>
+            <p class="post-date">Published on January 25, 2024</p>
+            <p class="post-excerpt">Sometimes, things go wrong on the road. Here’s a guide to what you should do if your trailer breaks down and how to stay safe until help arrives.</p>
+            <a href="post3.html" class="read-more">Read More</a>
+        </article>
+    </section>
+
+    <!-- Optional Sidebar (for recent posts, categories, etc.) -->
+    <section id="sidebar">
+        <h2>Recent Posts</h2>
+        <ul>
+            <li><a href="post1.html">How to Choose the Right Trailer for Your Needs</a></li>
+            <li><a href="post2.html">Tips for Safe Trailer Towing</a></li>
+            <li><a href="post3.html">What to Do if Your Trailer Breaks Down</a></li>
+        </ul>
+    </section>
+
+    <section id="social-media" style="text-align: center; padding: 30px 20px;">
+        <h2>Follow Us</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61573766495835" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/mdtrailerrental/" target="_blank">
+                <img src="instagram-icon.jpg" alt="Instagram" />
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MD Trailer Rental. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
