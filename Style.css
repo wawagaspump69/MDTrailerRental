@@ -279,7 +279,7 @@ footer p {
         body::before {
         background-size: 100%;
         background-position: center center;
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 
         footer {
