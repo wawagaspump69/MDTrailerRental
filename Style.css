@@ -311,17 +311,17 @@ footer p {
  form {
    text-align: center;
     width: 100%;
-    padding: 25px;
+    padding: 20px;
   }
 
   input, textarea {
-    font-size: 16px;
-    padding: 14px;
-    margin-bottom: 10px;
+    font-size: 12px;
+    padding: 8px;
+    margin-bottom: 6px;
   }
 
   label {
-    font-size: 18px;
+    font-size: 12px;
   }
   
 }
