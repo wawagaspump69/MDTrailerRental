@@ -371,6 +371,25 @@ footer p {
             margin-top: 10px;
         }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust navigation bar width */
+    .navbar {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Ensure 'Browse Now' button fits */
+    .browse-now {
+        max-width: 100%;
+        white-space: nowrap;
+    }
+
+    /* Reduce header height */
+    .header {
+        padding: 10px 0;
+        min-height: auto;
+    }
+}
     }
 
 
