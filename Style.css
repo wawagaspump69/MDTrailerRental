@@ -321,11 +321,10 @@ footer p {
         font-size: 14px;
     }
   
- form {
+form {
    text-align: center;
     width: 100%;
     padding: 20px;
-    margin: 0 auto;
   }
 
   input, textarea {
@@ -345,7 +344,6 @@ footer p {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%;
 }
 
 .upload-container input[type="file"] {
@@ -360,16 +358,11 @@ footer p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
 }
 
 .upload-container button:hover {
     background-color: #a31507;
 }
-
-   h3, h2 {
-        text-align: center; /* Ensures headings are centered */
-    }
 
 .calendar-container {
     display: flex;
