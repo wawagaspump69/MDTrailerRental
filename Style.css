@@ -277,9 +277,9 @@ footer p {
     font-size: 18px;
     
         body::before {
-        background-size: 120%;
+        background-size: 100%;
         background-position: center center;
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 
         footer {
@@ -372,8 +372,7 @@ footer p {
         }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* Adjust navigation bar width */
-    .navbar {
+    .header {
         max-width: 80%;
         margin: 0 auto;
     }
@@ -384,8 +383,7 @@ footer p {
         white-space: nowrap;
     }
 
-    /* Reduce header height */
-    .header {
+    .sticky-navbar {
         padding: 5px 0;
         min-height: 0;
     }
