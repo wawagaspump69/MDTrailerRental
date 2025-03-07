@@ -374,20 +374,20 @@ footer p {
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Adjust navigation bar width */
     .navbar {
-        max-width: 90%;
+        max-width: 80%;
         margin: 0 auto;
     }
 
     /* Ensure 'Browse Now' button fits */
     .browse-now {
-        max-width: 100%;
+        max-width: 120%;
         white-space: nowrap;
     }
 
     /* Reduce header height */
     .header {
-        padding: 10px 0;
-        min-height: auto;
+        padding: 5px 0;
+        min-height: 0;
     }
 }
     }
