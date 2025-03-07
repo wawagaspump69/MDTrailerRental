@@ -95,7 +95,6 @@
         <option value="enclosed">Enclosed</option>
         <option value="dump">Dump</option>
         <option value="motorcycle">Motorcycle</option>
-        <option value="flatbed">Flatbed</option>
         <option value="utility">Utility</option>
       </select>
     </label><br><br>
@@ -147,10 +146,6 @@ function calculatePrice(startDate, endDate, trailerType) {
         weekdayRate = 40;
         weekendRate = 45;
         weeklyRate = 205;
-    } else if (trailerType === 'flatbed') {
-        weekdayRate = 120;
-        weekendRate = 135;
-        weeklyRate = 750;
     } else if (trailerType === 'utility') {
         weekdayRate = 60;
         weekendRate = 70;
@@ -184,7 +179,7 @@ function calculatePrice(startDate, endDate, trailerType) {
 }
 
 function applyDiscount(price, discountCode) {
-    const validDiscounts = { '15OFF': 0.15 };
+    const validDiscounts = { '10off': 0.10 };
     let discount = 0;
 
     if (validDiscounts[discountCode]) {
