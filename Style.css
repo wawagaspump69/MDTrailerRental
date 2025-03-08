@@ -263,7 +263,6 @@ footer p {
     }
 
     #contact-form button {
-        align: center;
         padding: 12px;
         font-size: 1.2em;
     }
@@ -351,6 +350,7 @@ footer p {
 
 .upload-container button {
     background-color: #c61a09;
+    background-align: center;
     color: white;
     padding: 10px 15px;
     border: none;
