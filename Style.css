@@ -128,17 +128,6 @@ h1 {
     animation: fadeIn 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 section {
     padding: 40px 20px;
     margin: 40px auto;
@@ -214,15 +203,6 @@ footer p {
     animation: scroll 10s linear infinite;
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
 #contact-form input, #contact-form textarea, #contact-form input[type="file"] {
     width: 100%;
     padding: 5px;
@@ -253,6 +233,23 @@ footer p {
     transform: translateY(-2px);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 @media (max-width: 768px) {
 
         #contact-form label {
@@ -269,8 +266,8 @@ footer p {
         padding: 15px;
         font-size: 1.2em;
     }
-
-  html, body {
+  
+    html, body {
    margin: 0;
    padding: 0;
    width: 100%;
@@ -278,12 +275,12 @@ footer p {
    overflow-x: hidden;
 }
 
-.main-content {
+  .main-content {
    max-width: 100%;
    overflow-x: hidden;
 }
     
-        header {
+  header {
         padding: 10px 5px;
     }
 
@@ -321,7 +318,7 @@ footer p {
         font-size: 14px;
     }
   
-form {
+  form {
    text-align: center;
     width: 100%;
     padding: 20px;
@@ -401,8 +398,6 @@ form {
     }
 }
     }
-
-
 
     </style>
 </head>
