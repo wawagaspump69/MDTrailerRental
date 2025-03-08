@@ -390,7 +390,6 @@ form {
         margin: 0 auto;
     }
 
-    /* Ensure 'Browse Now' button fits */
     .browse-now {
         max-width: 120%;
         white-space: nowrap;
