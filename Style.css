@@ -263,8 +263,9 @@ footer p {
     }
 
     #contact-form button {
-        padding: 10px;
-        font-size: 1.1em;
+        align: center;
+        padding: 12px;
+        font-size: 1.2em;
     }
   
     html, body {
